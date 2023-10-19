@@ -1,0 +1,9 @@
+<h2>Shopping Cart</h2>
+<div *ngFor="let product of cart">
+  <h3>{{ product.name }}</h3>
+  <p>Price: {{ product.price }}</p>
+  <p>Quantity: {{ product.quantity }}</p>
+  <button (click)="increaseQuantity(product)">+</button>
+  <button (click)="decreaseQuantity(product)">-</button>
+  <button (click)="removeProduct(product)">Remove</button>
+</div>
